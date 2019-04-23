@@ -22,11 +22,11 @@ your Dapp -> Connect -> aelf-sdk.js -> sign
         appName
     });
 
-    // 我们还需要确认我们已经正常链接到链
+    // 我们还需要确认我们已经可以正常连接到链
     aelf.chain.getChainInformation((error, result) => {
         console.log('>>>>>>>>>>>>> getChainInformation >>>>>>>>>>>>>');
         console.log(error, result);
     });
 
-    
+
 ```
