@@ -6,3 +6,4 @@
     * [AELF](SupportedBlockchains/chain/AELF.md)
 * [Examples](Examples/Examples.md)
 * [API Reference](ApiReference/ApiReference.md)
+    * [GET_CHAIN_INFORMATION / getChainInformation](ApiReference/Api/getChainInformation.md)
