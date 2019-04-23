@@ -8,3 +8,5 @@
 * [API Reference](ApiReference/ApiReference.md)
     * [GET_CHAIN_INFORMATION / getChainInformation](ApiReference/Api/getChainInformation.md)
     * [CALL_AELF_CHAIN](ApiReference/Api/callAElfChain.md)
+    * [LOGIN / login](ApiReference/Api/login.md)
+    * [INIT_AELF_CONTRACT / contractAtAsync](ApiReference/Api/contractAtAsync.md)
