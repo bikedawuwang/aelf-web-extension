@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Getting Started](GettingStarted/GettingStarted.md)
-    * [Setting up for you Web Applications](GettingStarted/Setting/Setting.md)
+* [Setting up for you Web Applications](SettingUpForYou/SettingUpForYou.md)
 * [Supported Blockchains](SupportedBlockchains/SupportedBlockchains.md)
     * [AELF](SupportedBlockchains/chain/AELF.md)
 * [Examples](Examples/Examples.md)
