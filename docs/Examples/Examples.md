@@ -13,13 +13,17 @@ your Dapp -> Connect -> aelf-sdk.js -> sign
      const aelf = new window.NightElf.AElf({
         // Enter your test address in this location
         httpProvider: [
-            'http://192.168.197.56:8101/chain',
+            'https://127.0.0.1:8000/chain', // host
+            null, // timeout
+            null, // user
+            null, // password
+            // header
             [{
                 name: 'Accept',
                 value: 'text/plain;v=1.0'
             }]
         ],
-        appName
+        appName // your Dapp name
     });
 
     // 我们还需要确认我们已经可以正常连接到链

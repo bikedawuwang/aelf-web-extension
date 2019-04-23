@@ -2,7 +2,7 @@
 
 ```javascript
     aelf.login({
-        appName: 'hzzTest',
+        appName: 'test',
         chainId: 'AELF',
         payload: {
             method: 'LOGIN',
@@ -36,7 +36,7 @@
     //         }
     //     },
     //     permissions: [{
-    //         appName: 'hzzTest',
+    //         appName: 'test',
     //         address: 'your keyparis address',
     //         contracts: [{
     //             chainId: 'AELF',

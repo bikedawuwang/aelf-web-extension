@@ -2,7 +2,7 @@
 
 ```javascript
     aelf.checkPermission({
-        appName: 'hzzTest',
+        appName: 'test',
         type: 'address', // if you did not set type, it aways get by domain.
         address: '4WBgSL2fSem9ABD4LLZBpwP8eEymVSS1AyTBCqXjt5cfxXK'
     }, (error, result) => {
@@ -14,7 +14,7 @@
     //     permissions:[
     //         {
     //             address: '...',
-    //             appName: 'hzzTest',
+    //             appName: 'test',
     //             contracts: [{
     //                 chainId: 'AELF',
     //                 contractAddress: '4rkKQpsRFt1nU6weAHuJ6CfQDqo6dxruU3K3wNUFr6ZwZYc',

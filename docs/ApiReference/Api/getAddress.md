@@ -2,7 +2,7 @@
 
 ```javascript
     aelf.getAddress({
-        appName: 'hzzTest'
+        appName: 'test'
     }, (error, result) => {
         console.log('>>>>>>>>>>>>>>>>>>>', result);
     });
