@@ -1,4 +1,4 @@
-# Summary
+# Table of contents
 
 * [Getting Started](GettingStarted/GettingStarted.md)
     * [Setting up for you Web Applications](GettingStarted/Setting/Setting.md)

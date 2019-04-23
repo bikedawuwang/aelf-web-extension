@@ -4,11 +4,11 @@
 
 ## Let's take a look at the flow
 
-your Dapp -> Connect -> aelf-sdk.js -> sign
+your Dapp -&gt; Connect -&gt; aelf-sdk.js -&gt; sign
 
 ## 如何通过 NightELF 在 AELF 上发送交易
 
-```JavaScript
+```javascript
     // 在这之前你需要确认 NightELF 已经注入到 window
      const aelf = new window.NightElf.AElf({
         // Enter your test address in this location
@@ -82,12 +82,11 @@ your Dapp -> Connect -> aelf-sdk.js -> sign
         console.log('>>>>>>>>>>>>> Transfer >>>>>>>>>>>>>');
         console.log(result);
     })
-
 ```
 
 这样就通过 NightELF 就进行了一次 Transfer 转账。
 
 ## 如何知道哪个账户对你的Dapp进行了授权
 
-如果当前 NightELF 中的 keypair 有对你进行授权的话。
-你可以通过 ```aelf.login``` 的返回值查询到哪个账户对你的Dapp进行了授权  
+如果当前 NightELF 中的 keypair 有对你进行授权的话。 你可以通过 `aelf.login` 的返回值查询到哪个账户对你的Dapp进行了授权
+
