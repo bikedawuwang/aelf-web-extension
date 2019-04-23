@@ -1,9 +1,9 @@
-# Table of contents
+# Summary
 
 * [Getting Started](GettingStarted/GettingStarted.md)
 * [Setting up for you Web Applications](SettingUpForYou/SettingUpForYou.md)
 * [Supported Blockchains](SupportedBlockchains/SupportedBlockchains.md)
-    * [AELF](SupportedBlockchains/chain/AELF.md)
+    * [AELF](SupportedBlockchains/Chain/AELF.md)
 * [Examples](Examples/Examples.md)
 * [API Reference](ApiReference/ApiReference.md)
     * [GET_CHAIN_INFORMATION / getChainInformation](ApiReference/Api/getChainInformation.md)
