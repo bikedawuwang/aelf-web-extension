@@ -92,3 +92,31 @@ your Dapp -> Connect -> aelf-sdk.js -> sign
 
 如果当前 NightELF 中的 keypair 有对你进行授权的话。 你可以通过 `aelf.login` 的返回值查询到哪个账户对你的Dapp进行了授权
 
+```javascript
+    aelf.login({
+        appName: 'test', // 你的Dapp名称
+        chainId: 'AELF',
+        payload: {
+            method: 'LOGIN', 
+            contracts: [{
+                chainId: 'AELF',
+                contractAddress: '4rkKQpsRFt1nU6weAHuJ6CfQDqo6dxruU3K3wNUFr6ZwZYc',
+                contractName: 'MultiToken',
+                description: 'MultiToken Contract',
+                github: ''
+            }]
+        }
+    }, (error, result) => {
+        
+    })
+
+    // 通过 detail 你可以得到当前授权的账户 address
+    // result = {
+    //     detail: "{"address":"6WZNJgU5MHWsvzZmPpC7cW6g3qciniQhDKRLCvbQcTCcVFH"}"
+    //     error: 0
+    //     errorMessage: ""
+    //     from: "contentNightElf"
+    //     message: ""
+    //     sid: "207752940259029992581493"
+    // }
+```

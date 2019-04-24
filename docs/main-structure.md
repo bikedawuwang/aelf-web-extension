@@ -5,6 +5,7 @@
 * [Supported Blockchains](SupportedBlockchains/SupportedBlockchains.md)
     * [AELF](SupportedBlockchains/Chain/AELF.md)
 * [Examples](Examples/Examples.md)
+* [Featrue & TODO](Feature/Feature.md)
 * [API Reference](ApiReference/ApiReference.md)
     * [GET_CHAIN_INFORMATION / getChainInformation](ApiReference/Api/getChainInformation.md)
     * [CALL_AELF_CHAIN](ApiReference/Api/callAElfChain.md)
