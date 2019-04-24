@@ -2,6 +2,8 @@
 
 * [Getting Started](GettingStarted/GettingStarted.md)
 * [User use document](User/User.md)
+    * [Install NightELF](User/Step/install.md)
+    * [Create](User/Step/create.md)
 * [Setting up for you Web Applications](SettingUpForYou/SettingUpForYou.md)
 * [Supported Blockchains](SupportedBlockchains/SupportedBlockchains.md)
     * [AELF](SupportedBlockchains/Chain/AELF.md)
