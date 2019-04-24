@@ -27,6 +27,7 @@ your Dapp -&gt; Connect -&gt; aelf-sdk.js -&gt; sign
     });
 
     // 我们还需要确认我们已经可以正常连接到链
+    // 注意：这一步骤是必要的
     aelf.chain.getChainInformation((error, result) => {
         console.log('>>>>>>>>>>>>> getChainInformation >>>>>>>>>>>>>');
         console.log(error, result);

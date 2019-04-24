@@ -29,7 +29,7 @@
 
 ```
 
-2. window.NightElf.api({appName. < method name >})
+2. window.NightElf.api({appName, < method name >}).then()
 
 ```javascript
     window.NightElf.api({
@@ -41,3 +41,15 @@
 ```
 
 两种方法获取的值是相同的，但是我们更推荐你使用第一种方式。
+
+[GET_CHAIN_INFORMATION / getChainInformation](Api/getChainInformation.md)
+[CALL_AELF_CHAIN](Api/callAElfChain.md)
+[LOGIN / login](Api/login.md)
+[INIT_AELF_CONTRACT / contractAtAsync](Api/contractAtAsync.md)
+[CALL_AELF_CONTRACT](Api/callAElfContract.md)
+[CALL_AELF_CONTRACT_READONLY](Api/callAElfContractReadonly.md)
+[CHECK_PERMISSION / checkPermission](Api/checkPermission.md)
+[GET_ADDRESS / getAddress](Api/getAddress.md)
+[SET_CONTRACT_PERMISSION / setContractPermission](Api/setContractPermission.md)
+[REMOVE_CONTRACT_PERMISSION / removeContractPermission](Api/removeContractPermission.md)
+[REMOVE_METHODS_WHITELIST / removeMethodsWhitelist](Api/removeMethodsWhitelist.md)
