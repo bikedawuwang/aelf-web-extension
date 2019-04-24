@@ -6,6 +6,7 @@
     * [Create](User/Step/create.md)
     * [Create Keypair](User/Step/use.md)
     * [Backup Keypair / Import Keypair](User/Step/backup-import.md)
+    * [Backup NightELF](User/Step/backupNightELF.md)
 * [Setting up for you Web Applications](SettingUpForYou/SettingUpForYou.md)
 * [Supported Blockchains](SupportedBlockchains/SupportedBlockchains.md)
     * [AELF](SupportedBlockchains/Chain/AELF.md)
