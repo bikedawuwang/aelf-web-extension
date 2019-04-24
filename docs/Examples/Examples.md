@@ -1,12 +1,12 @@
 # Examples
 
-如何使用 NightELF 开发你的 Web application ?
+如何使用 NightELF 进行转账操作
 
-## Let's take a look at the flow
+## 当我调用API时发生了什么？
 
 your Dapp -&gt; Connect -&gt; aelf-sdk.js -&gt; sign
 
-## 如何通过 NightELF 在 AELF 上发送交易
+## 如何通过 NightELF 在 AELF 上进行转账操作
 
 ```javascript
     // 在这之前你需要确认 NightELF 已经注入到 window
