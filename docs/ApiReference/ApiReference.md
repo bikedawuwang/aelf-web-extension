@@ -44,14 +44,24 @@
 
 ## Quick link
 
-[GET_CHAIN_INFORMATION / getChainInformation](Api/getChainInformation.md) <br>
-[CALL_AELF_CHAIN](Api/callAElfChain.md) <br>
-[LOGIN / login](Api/login.md) <br>
-[INIT_AELF_CONTRACT / contractAtAsync](Api/contractAtAsync.md) <br>
-[CALL_AELF_CONTRACT](Api/callAElfContract.md) <br>
-[CALL_AELF_CONTRACT_READONLY](Api/callAElfContractReadonly.md) <br>
-[CHECK_PERMISSION / checkPermission](Api/checkPermission.md) <br>
-[GET_ADDRESS / getAddress](Api/getAddress.md) <br>
-[SET_CONTRACT_PERMISSION / setContractPermission](Api/setContractPermission.md) <br>
-[REMOVE_CONTRACT_PERMISSION / removeContractPermission](Api/removeContractPermission.md) <br>
-[REMOVE_METHODS_WHITELIST / removeMethodsWhitelist](Api/removeMethodsWhitelist.md) <br>
+[GET_CHAIN_INFORMATION / getChainInformation](Api/getChainInformation.md)
+
+[CALL_AELF_CHAIN](Api/callAElfChain.md)
+
+[LOGIN / login](Api/login.md)
+
+[INIT_AELF_CONTRACT / contractAtAsync](Api/contractAtAsync.md)
+
+[CALL_AELF_CONTRACT](Api/callAElfContract.md)
+
+[CALL_AELF_CONTRACT_READONLY](Api/callAElfContractReadonly.md)
+
+[CHECK_PERMISSION / checkPermission](Api/checkPermission.md) 
+
+[GET_ADDRESS / getAddress](Api/getAddress.md)
+
+[SET_CONTRACT_PERMISSION / setContractPermission](Api/setContractPermission.md)
+
+[REMOVE_CONTRACT_PERMISSION / removeContractPermission](Api/removeContractPermission.md)
+
+[REMOVE_METHODS_WHITELIST / removeMethodsWhitelist](Api/removeMethodsWhitelist.md)

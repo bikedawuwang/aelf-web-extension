@@ -1,10 +1,8 @@
 # Examples
 
-如何使用 NightELF 进行转账操作
-
 ## 当我调用API时发生了什么？
 
-your Dapp -&gt; Connect -&gt; aelf-sdk.js -&gt; sign
+your Dapp -> Connect -> aelf-sdk.js -> sign
 
 ## 如何通过 NightELF 在 AELF 上进行转账操作
 
@@ -26,35 +24,7 @@ your Dapp -&gt; Connect -&gt; aelf-sdk.js -&gt; sign
         appName // your Dapp name
     });
 
-    // 我们还需要确认我们已经可以正常连接到链
-    // 注意：这一步骤是必要的
-    aelf.chain.getChainInformation((error, result) => {
-        console.log('>>>>>>>>>>>>> getChainInformation >>>>>>>>>>>>>');
-        console.log(error, result);
-    });
-
-    // 对Dapp进行授权 如果需要使用 Transfer 进行交易 我们需要对Dapp 授权 MultiToken 合约。
-    // 到这一步 NightELF 会出现弹窗提示登录，如果当前NightELF 中没有任何 keypair 则会提醒你添加 keypair 到 NightELF
-    // 当已经拥有 keypair 并且通过授权，你可以到 NightELF 内的应用管理选项查看授权的详细信息
-
-    aelf.login({
-        appName: 'test', // 你的Dapp名称
-        chainId: 'AELF',
-        payload: {
-            method: 'LOGIN', 
-            contracts: [{
-                chainId: 'AELF',
-                contractAddress: '4rkKQpsRFt1nU6weAHuJ6CfQDqo6dxruU3K3wNUFr6ZwZYc',
-                contractName: 'MultiToken',
-                description: 'MultiToken Contract',
-                github: ''
-            }]
-        }
-    }, (error, result) => {
-        console.log('login>>>>>>>>>>>>>>>>>>', result);
-    });
-
-    // 注意 wallet.address 为你已授权的账户地址
+        // 注意 wallet.address 为你已授权的账户地址
     const wallet = {
         address: '2J...du'
     }
@@ -62,27 +32,58 @@ your Dapp -&gt; Connect -&gt; aelf-sdk.js -&gt; sign
     // multitokenContract 用来存放合约方法
     let multitokenContract = null;
 
-    aelf.chain.contractAtAsync(
-        '4rkKQpsRFt1nU6weAHuJ6CfQDqo6dxruU3K3wNUFr6ZwZYc',
-        wallet,
-        (error, result) => {
-            console.log('>>>>>>>>>>>>> contractAtAsync >>>>>>>>>>>>>');
-            console.log(error, result);
-            multitokenContract = result;
+    // 我们还需要确认我们已经可以正常连接到链
+    // 注意：这一步骤是必要的
+    aelf.chain.getChainInformation((error, result) => {
+        console.log('>>>>>>>>>>>>> getChainInformation >>>>>>>>>>>>>');
+        console.log(error, result);
+        if (result && result.error === 0) {
+
+            // 对Dapp进行授权 如果需要使用 Transfer 进行交易 我们需要对Dapp 授权 MultiToken 合约。
+            // 到这一步 NightELF 会出现弹窗提示登录，如果当前NightELF 中没有任何 keypair 则会提醒你添加 keypair 到 NightELF
+            // 当已经拥有 keypair 并且通过授权，你可以到 NightELF 内的应用管理选项查看授权的详细信息
+
+            aelf.login({
+                appName: 'test', // 你的Dapp名称
+                chainId: 'AELF',
+                payload: {
+                    method: 'LOGIN', 
+                    contracts: [{
+                        chainId: 'AELF',
+                        contractAddress: '4rkKQpsRFt1nU6weAHuJ6CfQDqo6dxruU3K3wNUFr6ZwZYc',
+                        contractName: 'MultiToken',
+                        description: 'MultiToken Contract',
+                        github: ''
+                    }]
+                }
+            }, (error, result) => {
+                console.log('login>>>>>>>>>>>>>>>>>>', result);
+                if (result && result.error === 0) {
+
+                     aelf.chain.contractAtAsync(
+                        '4rkKQpsRFt1nU6weAHuJ6CfQDqo6dxruU3K3wNUFr6ZwZYc',
+                        wallet,
+                        (error, result) => {
+                            console.log('>>>>>>>>>>>>> contractAtAsync >>>>>>>>>>>>>');
+                            console.log(error, result);
+
+                            multitokenContract = result;
+                            const payload = {
+                                to: '6W...FH' // 要交易给谁
+                                symbol: 'ELF' // 代币类型
+                                amount: 100  // 数量
+                            }
+                                // 交易可以通过 result 中返回的 TransactionId 进行查询
+                                multitokenContract.Transfer(payload, (error, result) => {
+                                    console.log('>>>>>>>>>>>>> Transfer >>>>>>>>>>>>>');
+                                    console.log(result);
+                                })
+                        }
+                    );
+                }
+            });
         }
-    );
-
-    const payload = {
-        to: '6W...FH' // 要交易给谁
-        symbol: 'ELF' // 代币类型
-        amount: 100  // 数量
-    }
-
-    // 交易可以通过 result 中返回的 TransactionId 进行查询
-    multitokenContract.Transfer(payload, (error, result) => {
-        console.log('>>>>>>>>>>>>> Transfer >>>>>>>>>>>>>');
-        console.log(result);
-    })
+    });
 ```
 
 这样就通过 NightELF 就进行了一次 Transfer 转账。

@@ -2,12 +2,14 @@
 
 通过阅读本文档，可以使你快速上手使用 NightELF 进行 Dapp 开发。
 
-[release version](#)  等候发布...... <br>
+[release version](#)  等候发布......
+
 [dev version NightELF](https://chrome.google.com/webstore/detail/aelf-explorer-extension-d/mlmlhipeonlflbcclinpbmcjdnpnmkpf)
 
 ## 为什么要使用NightELF
 
-通过 NightELF 可以帮助你快速实现AELF的转账、查询等操作。使你可以更加专注Dapp开发。<br>
+通过 NightELF 可以帮助你快速实现AELF的转账、查询等操作。使你可以更加专注Dapp开发。
+
 你可以通过查看 [Examples](../Examples/Examples.md) 了解如何快速实现转账功能
 
 
