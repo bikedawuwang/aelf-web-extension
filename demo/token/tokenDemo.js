@@ -4,6 +4,9 @@
  * @description How to use the plugin for token transfer
 */
 
+// 2b02fe21fe47cb455ad40f3b927bf7c10978876496bb6f1ccdff4ddbd9344fde
+// 60755aaad4733ead9dd20d9b88811a49d1bb2b7520e829e89d44a060159b32eb
+
 const tokenAddress = '4rkKQpsRFt1nU6weAHuJ6CfQDqo6dxruU3K3wNUFr6ZwZYc';
 const wallet1 = {
     address: '6WZNJgU5MHWsvzZmPpC7cW6g3qciniQhDKRLCvbQcTCcVFH'
