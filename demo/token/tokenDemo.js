@@ -6,7 +6,7 @@
 
 const tokenAddress = '4rkKQpsRFt1nU6weAHuJ6CfQDqo6dxruU3K3wNUFr6ZwZYc';
 const wallet1 = {
-    address: '2JqnxvDiMNzbSgme2oxpqUFpUYfMjTpNBGCLP2CsWjpbHdu'
+    address: '6WZNJgU5MHWsvzZmPpC7cW6g3qciniQhDKRLCvbQcTCcVFH'
 };
 const wallet2 = {
     address: '21zGCU6gcDRnsB4z31nKQ4k1K6soJJGecoCYcN7DzLNq5RQ'
